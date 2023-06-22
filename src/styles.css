@@ -1,0 +1,85 @@
+nav a {
+  margin: 1rem;
+}
+/* CSS for Products Component */
+.products-container {
+  margin-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  
+  margin: auto;
+  width: 33%; /* Three columns, each taking one-third of the container width */
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.product-item h3 {
+  margin: 0;
+}
+
+.product-item img {
+  border-radius: 10px;
+
+  width: 80%;
+  height: 80%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .product-item {
+    width: 50%; /* Two columns for screens up to 768px */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-item {
+    width: 100%; /* One column for screens up to 480px */
+  }
+}
+
+
+
+.resp {
+  cursor: pointer;
+  margin: auto;
+  text-align: center !important;
+  color: #d53100;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* letter-spacing: .25em; */
+  /* display: inline-block; */
+  padding: 15px;
+  position: relative;
+}
+.proname{
+  color:#d53100 ;
+}
+
+.resp:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+.resp::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+  transition: width .5s ease 0s, right .5s ease 0s;
+  width: 0;
+}
+
+/* Add hover effect */
+.product-item:hover img {
+  transform: scale(1.1); /* Increase scale to zoom in on hover */
+}
+
+
+

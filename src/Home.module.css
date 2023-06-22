@@ -1,0 +1,208 @@
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Add an overlay for better readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.video-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+.box-container {
+  /* margin-top: 1rem; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  /* padding: 20px; */
+  /* margin: 10px; */
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.box-image {
+  margin-top: 2rem;
+  height: 90px;
+
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.box-heading {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.box-paragraph { 
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 992px) {
+
+  /* 4 boxes on big screens */
+  .box {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  /* 2 boxes on medium screens */
+  .box {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* 1 box on small screens */
+  .box {
+    width: 100%;
+  }
+}
+------------------mid------------------
+.myhd {
+ text-align: center;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.hd {
+  font-family: sans-serif;
+  color: #d53100;
+  text-align: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.pgh {
+  letter-spacing: normal;
+  width: 60%;
+ margin: auto;
+  font-size: 19px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .hd {
+    font-size: 20px;
+  }
+
+  .pgh {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 18px;
+  }
+
+  .pgh {
+    font-size: 12px;
+  }
+}
+.hd {
+  text-align: center !important;
+  margin: auto;
+  /* color: #fff; */
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+  /* display: inline-block; */
+  padding: 15px 20px;
+  position: relative;
+}
+
+.hd::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #d53100;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.hd:hover::after {
+ 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+.imag-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.imag {
+  width: 12.5%; 
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.imag img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive CSS for different screen sizes */
+
+@media (max-width: 768px) {
+  /* For medium-sized screens */
+  .imag {
+    width: 33.33%; 
+  }
+}
+
+@media (max-width: 576px) {
+  /* For small screens */
+  .imag {
+    width: 50%;
+  }
+}
+
+
+
